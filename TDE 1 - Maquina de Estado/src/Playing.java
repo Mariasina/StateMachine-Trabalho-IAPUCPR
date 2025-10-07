@@ -1,5 +1,6 @@
-public class Playing extends AbstractState<Jonas>{
-    public Playing(Jonas jonas){
+public class Playing extends AbstractState<Jonas> {
+
+    public Playing(Jonas jonas) {
         super(jonas);
     }
 
@@ -18,3 +19,5 @@ public class Playing extends AbstractState<Jonas>{
         }
     }
 }
+
+

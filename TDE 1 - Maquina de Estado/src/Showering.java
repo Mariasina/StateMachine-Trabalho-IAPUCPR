@@ -1,17 +1,12 @@
-public class Showering extends AbstractState<Jonas>{
+public class Showering extends AbstractState<Jonas> {
 
-    public Showering(Jonas jonas){
+    public Showering(Jonas jonas) {
         super(jonas);
     }
 
     @Override
     public void enter() {
         character.printStats(character.getName() + ": Hora de tomar banho!");
-    }
-
-    @Override
-    public void leave() {
-        character.printStats(character.getName() + ": Já estou limpo!");
     }
 
     @Override
@@ -22,5 +17,10 @@ public class Showering extends AbstractState<Jonas>{
         if (character.getDirty() <= 0) {
             character.setState(new Playing(character));
         }
+    }
+
+    @Override
+    public void exit() {
+        character.printStats(character.getName() + ": Já estou limpo!");
     }
 }

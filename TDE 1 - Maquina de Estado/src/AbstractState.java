@@ -1,5 +1,5 @@
-public abstract class AbstractState<C extends Character> implements State<C> {
-    private final C character;
+public abstract class AbstractState<C extends Agente> implements State<C> {
+    protected final C character;
 
     public AbstractState(C character) {
         this.character = character;

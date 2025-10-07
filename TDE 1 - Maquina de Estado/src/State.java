@@ -1,4 +1,4 @@
-public interface State<C extends Character>{
+public interface State<C extends Agente>{
     void enter();
     void execute();
     void exit();

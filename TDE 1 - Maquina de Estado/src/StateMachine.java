@@ -10,12 +10,13 @@ public class StateMachine {
 
     public void run(int ticks) {
         for (int i = 0; i < ticks; i++) {
-            System.out.println("---- Tick " + (i+1) + " ----");
+            System.out.println("---- Tick " + (i + 1) + " ----");
             for (Agente agent : agents) {
                 agent.update();
             }
+
             try {
-                Thread.sleep(1000); // 1 segundo por tick
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
