@@ -8,17 +8,17 @@ public class StateMachine {
         agents.add(agent);
     }
 
-    public void run(int ticks) {
-        for (int i = 0; i < ticks; i++) {
-            System.out.println("---- Tick " + (i + 1) + " ----");
+    public void run() {
+        while (true) {
             for (Agente agent : agents) {
                 agent.update();
             }
-
+            System.out.println("----");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
+                break;
             }
         }
     }
