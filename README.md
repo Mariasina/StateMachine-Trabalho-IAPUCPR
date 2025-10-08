@@ -44,30 +44,31 @@ Transições principais:
 ---
 
 ## Estrutura do Projeto
-
+```
 📦 maquina-de-estados
 ├── 📁 src/
-│ ├── Main.java
-│ ├── StateMachine.java
-│ ├── interfaces/
-│ │ ├── Agente.java
-│ │ └── State.java
-│ ├── states/
-│ │ ├── AbstractState.java
-│ │ ├── Playing.java
-│ │ ├── Showering.java
-│ │ ├── Painting.java
-│ │ ├── Cleaning.java
-│ │ └── Resting.java
-│ └── agents/
-│ ├── Jonas.java
-│ └── Manny.java
+│   ├── Main.java
+│   ├── StateMachine.java
+│   ├── interfaces/
+│   │   ├── Agente.java
+│   │   └── State.java
+│   ├── states/
+│   │   ├── AbstractState.java
+│   │   ├── Playing.java
+│   │   ├── Showering.java
+│   │   ├── Painting.java
+│   │   ├── Cleaning.java
+│   │   └── Resting.java
+│   └── agents/
+│       ├── Jonas.java
+│       └── Manny.java
 ├── 📁 docs/
-│ ├── diagrama_jonas.png
-│ ├── diagrama_manny.png
-│ └── Trabalho_Maquina_de_Estados.pdf
+│   ├── diagrama_jonas.png
+│   ├── diagrama_manny.png
+│   └── Trabalho_Maquina_de_Estados.pdf
 └── README.md
 
+```
 ---
 
 ## Como Compilar e Executar
@@ -92,20 +93,20 @@ Jonas | Sujeira: 0
 Manny - Hora de pintar!
 Manny - Manny: Pintando...
 Manny - Manny | Quadros: 0
-----
+
 Jonas: Jogando...
 Jonas | Sujeira: 5
-----
+
 Jonas: Jogando...
 Jonas | Sujeira: 10
-----
+
 Jonas: Hora de tomar banho!
 Jonas | Sujeira: 30
 Jonas: Tomando banho...
 Jonas | Sujeira: 25
 Jonas: Já estou limpo!
 Jonas: Hora de jogar!
-----
+
 Manny - Tudo limpo!
 Manny - Indo descansar...
 
