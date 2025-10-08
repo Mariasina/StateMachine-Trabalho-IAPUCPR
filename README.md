@@ -47,21 +47,18 @@ Transições principais:
 ```
 📦 maquina-de-estados
 ├── 📁 src/
+│   └── AbstractState.java
+│   ├── Agente.java
+│   ├── Cleaning.java
+│   ├── Jonas.java
 │   ├── Main.java
+│   ├── Manny.java
+│   ├── Painting.java
+│   ├── Playing.java
+│   ├── Resting.java
+│   ├── Showering.java
+│   ├── State.java
 │   ├── StateMachine.java
-│   ├── interfaces/
-│   │   ├── Agente.java
-│   │   └── State.java
-│   ├── states/
-│   │   ├── AbstractState.java
-│   │   ├── Playing.java
-│   │   ├── Showering.java
-│   │   ├── Painting.java
-│   │   ├── Cleaning.java
-│   │   └── Resting.java
-│   └── agents/
-│       ├── Jonas.java
-│       └── Manny.java
 ├── 📁 docs/
 │   └── Trabalho_Maquina_de_Estados.pdf
 └── README.md
@@ -118,4 +115,5 @@ Manny - Indo descansar...
 | **Manny** | Painting  | "Hora de pintar!"       | Contador de quadros ↑ | 2 quadros → Resting / 3 quadros → Cleaning |
 | **Manny** | Cleaning  | "Começando a limpar..." | Tempo de limpeza ↓    | Limpeza completa → Resting                 |
 | **Manny** | Resting   | "Indo descansar..."     | Tempo de descanso ↓   | Tempo zerado → Painting                    |
+
 
