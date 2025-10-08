@@ -63,8 +63,6 @@ Transições principais:
 │       ├── Jonas.java
 │       └── Manny.java
 ├── 📁 docs/
-│   ├── diagrama_jonas.png
-│   ├── diagrama_manny.png
 │   └── Trabalho_Maquina_de_Estados.pdf
 └── README.md
 
@@ -120,3 +118,4 @@ Manny - Indo descansar...
 | **Manny** | Painting  | "Hora de pintar!"       | Contador de quadros ↑ | 2 quadros → Resting / 3 quadros → Cleaning |
 | **Manny** | Cleaning  | "Começando a limpar..." | Tempo de limpeza ↓    | Limpeza completa → Resting                 |
 | **Manny** | Resting   | "Indo descansar..."     | Tempo de descanso ↓   | Tempo zerado → Painting                    |
+
