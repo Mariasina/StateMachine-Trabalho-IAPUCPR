@@ -14,8 +14,8 @@ public class Resting extends AbstractState<Manny> {
     @Override
     public void execute() {
         int rest = character.getRestTime();
-        character.printStats(character.getName() + ": Descansando...");
-        character.printStats(character.getName() + " | Tempo restante: " + character.getRestTime());
+        character.printStats(": Descansando...");
+        character.printStats(" | Tempo restante: " + character.getRestTime());
         character.setRestTime(rest - 1);
 
         if (rest <= 0) {

@@ -15,7 +15,7 @@ public class StateMachine {
             }
             System.out.println("----");
             try {
-                Thread.sleep(1000);
+                Thread.sleep(1300);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;

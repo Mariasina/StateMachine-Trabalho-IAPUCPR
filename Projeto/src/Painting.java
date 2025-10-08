@@ -10,8 +10,8 @@ public class Painting extends AbstractState<Manny> {
 
     @Override
     public void execute() {
-        character.printStats(character.getName() + ": Pintando...");
-        character.printStats(character.getName() + " | Quadros: " + character.getPaintCount());
+        character.printStats(": Pintando...");
+        character.printStats(" | Quadros: " + character.getPaintCount());
         character.addPaint(1);
 
         int count = character.getPaintCount();

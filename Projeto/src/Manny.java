@@ -28,7 +28,7 @@ public class Manny implements Agente {
 
     @Override
     public void printStats(String status) {
-        System.out.println(name + " - " + status);
+        System.out.println(name + status);
     }
 
     public void setState(State<Manny> newState) {

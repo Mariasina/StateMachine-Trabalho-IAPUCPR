@@ -11,8 +11,8 @@ public class Cleaning extends AbstractState<Manny> {
     @Override
     public void execute() {
         int clean = character.getCleanTime();
-        character.printStats(character.getName() + ": Limpando...");
-        character.printStats(character.getName() + " | Sujeira: " + character.getCleanTime());
+        character.printStats(": Limpando...");
+        character.printStats(" | Sujeira: " + character.getCleanTime());
 
         character.setCleanTime(clean - 1);
 
